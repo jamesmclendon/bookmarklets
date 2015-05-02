@@ -42,7 +42,7 @@ javascript:function%20getSelText(){var%20e="";if(window.getSelection)e=window.ge
 javascript:function%20getSelText(){var%20txt='';if(window.getSelection){txt=window.getSelection();}else%20if(document.getSelection){txt=document.getSelection();}else%20if(document.selection){txt=document.selection.createRange().text;}else%20return%20'';return%20txt;}var%20q=getSelText();var%20load=window.open('comgooglemaps://?saddr=My+location&daddr='+escape(q)+'&directionsmode=transit')
 ```
 
-### Selected text to Drafts
+### Selected text to Drafts 4
 
 ```javascript
 javascript:function%20getSelText(){var%20e="";if(window.getSelection)e=window.getSelection();else%20if(document.getSelection)e=document.getSelection();else{if(!document.selection)return"";e=document.selection.createRange().text}return%20e}var%20q=getSelText(),load=window.open("drafts4://x-callback-url/create?text="+escape(q));
