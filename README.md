@@ -27,24 +27,6 @@ if (window.location.href.match(/youtube.googleapis.com\/v\//)) {
 }
 ```
 
-## redirect Wikimedia and nytimes.com pages to/from mobile subdomains
-
-```javascript
-javascript: if (window.location.hostname.match(".wik")) {
-	if (window.location.hostname.match(".m.")) {
-  	window.location.hostname = window.location.hostname.replace(".m.", ".");
-	} else {
-  	window.location.hostname = window.location.hostname.replace(".wik", ".m.wik");
-	}
-} else if (window.location.hostname.match("nytimes.com")) {
-	if (window.location.hostname.match("mobile.")) {
-  	window.location.hostname = window.location.hostname.replace("mobile.", "");
-	} else {
-  	window.location.hostname = window.location.hostname.replace("www.nytimes.com", "mobile.nytimes.com");
-	}
-}
-```
-
 ## define selected text at Wiktionary
 
 ```javascript
